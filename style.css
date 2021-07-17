@@ -1,0 +1,357 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu{
+    background-color: #333;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 900;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: fixed;
+}
+
+.navegacao .item-navegacao a{
+    text-decoration: none;
+    color: white;
+}
+
+.navegacao .item-navegacao a:hover{
+    cursor: pointer;
+    color:#D90066;
+}
+
+.navegacao .item-navegacao{
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+.logo{
+    height: 20vh;
+    padding: 10px;
+}
+
+#botao-doar{
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: transparent;
+    color: #D90066;
+    border: 1px solid #D90066;
+    border-radius: 3px;
+}
+
+#botao-doar a{
+    color: #D90066;
+    text-decoration: none;
+    border: #D90066 solid 1px;
+    border-radius: 3px;
+    padding: 15px 20px;
+}
+
+#botao-doar:hover{
+    cursor: pointer;
+    color: #D90066;
+    background-color: #fff;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.home{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 600px;
+}
+
+.video-container #video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.home .headline{
+    height: auto;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    width: 100%;
+}
+
+#botao-doar-home{
+    padding: 10px 10px;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: #F2AA00;
+    color:#fff;
+    border-radius: 3px;
+    border-style: none;
+}
+
+#botao-doar-home:hover{
+    cursor: pointer;
+    background-color:#408C8C;
+    color:#F2AA00;
+}
+
+.oferta{
+    padding-left: 150px;
+    padding-right: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.oferta .oferta-titulo{
+    display: flex;
+    flex-direction: column;
+}
+
+.oferta h1{
+    text-transform: uppercase;
+    font-size: 75px;
+    text-align: center;
+    font-weight: 900;
+    padding-top: 30px;
+}
+
+#oferta-titulo-span{
+    font-size: 30px;
+    color: grey;
+    text-align: center;
+}
+
+.lista-beneficios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.beneficio h2{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    color: #408C8C;
+    padding-left: 10px;
+}
+
+.beneficio-paragrafo{
+    font-size: 35px;
+    color: grey;
+    padding-left: 10px;
+}
+
+.beneficio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+}
+
+#beneficio02{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 10px;
+}
+
+.slideIn {
+    animation: 1.5s ease-out 0s 1 slideInAnimation forwards;
+}
+
+@keyframes slideInAnimation {
+    0%{
+        transform: translateY(50%);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.card-doacao{
+    padding-left: 180px;
+    padding-right: 180px;
+    display: flex;
+    flex-direction: row;
+}
+
+#texto-doacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 45px;
+    padding-right: 45px;
+    color: white;
+    background-color: #408C8C;
+    border-radius: 3px;
+}
+
+#botao-doar-cta{
+    padding: 10px 10px;
+    font-size: 25px;
+    font-weight: 700;
+    width: 200px;
+    background-color: #F2AA00;
+    color:#fff;
+    border-radius: 3px;
+    border-style: none;
+}
+
+#botao-doar-cta:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #F2AA00;
+}
+
+#texto-doacao h1{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#texto-doacao p{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.social{
+    background-color: #F2AA00;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-bottom: 30px;
+}
+
+.social h1{
+    text-transform: uppercase;
+    color: #D90066;
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 30px;
+}
+
+.carrossel-item{
+    display: none;
+    align-content: center;
+    width: 600px;
+    height: 250px;
+}
+
+.carrossel-item:target{
+    display: block;
+}
+
+.carrossel-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: inline-start;
+    width: 60%;
+    padding-right: 20px;
+    height: 250px;
+    color: #fff;
+    font-style: italic;
+}
+
+.carrossel-texto h5{
+    text-align: right;
+    padding-top: 10px;
+}
+
+.carrossel-seta-voltar a{
+    text-decoration: none;
+    justify-content: center;
+}
+
+.carrossel-seta-voltar{
+    float: inline-start;
+    width: 5%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.carrossel-seta-voltar h1:hover{
+    cursor: pointer;
+    color: #fff;
+}
+
+.carrossel-seta-ir a{
+    text-decoration: none;
+}
+
+.carrossel-seta-ir{
+    float: inline-start;
+    width: 5%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.carrossel-seta-ir h1:hover{
+    cursor: pointer;
+    color: #fff;
+}
+
+.img-container{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 250px;
+    float: inline-start;
+    align-content: center;
+    justify-content: center;
+}
+
+#item01 img{
+    border-radius: 3px;
+    padding: 20px;
+    width: 100%;
+}
+
+#item02 img{
+    border-radius: 3px;
+    padding: 20px;
+    width: 100%;
+}
+
+.form-container{
+    background-color: #D90066;
+}
+
+.form-titulo h1{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

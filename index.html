@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="author" content="Beatriz Massaioli">
+        <meta name="description" content="Site doação Minha Campinas">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Eu Faço Minha Campinas </title>
+        <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <nav class="menu">
+            <ul class="navegacao">
+                <li class="item-navegacao"><a href="#oferta">SOBRE</a></li>
+                <li class="item-navegacao"><a href="#doacao">COMO PARTICIPAR</a></li>
+                <li class="item-navegacao"><a href="#social">O QUE DIZEM</a></li>
+            </ul>
+            <div>
+                <img class="logo" src="assets/images/LogoMCPS.png">
+            </div>
+                <button id="botao-doar" onclick="/">FAÇA PARTE</button>
+        </nav>    
+        
+        <section class="home">
+            <div class="video-container">
+                <video autoplay muted loop id="video">
+                    <source src="assets/images/equipe.mp4" type="video/mp4">
+                </video>
+    
+                <div class="headline">
+                    <h1>SEJA PARTE DAS DECISÕES DA CIDADE</h1>
+                    <button id="botao-doar-home" onclick="/"> DOE AGORA</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="oferta">  
+                <div class="oferta-titulo">
+                    <h1> Campinas do jeitinho que você merece</h1>
+                    <span id="oferta-titulo-span"> Há 7 anos reunindo campineiros e campineiras que querem participar ativamente das decisões da cidade</span>
+                </div>
+                <div class="lista-beneficios">
+                    <div class="beneficio" id="beneficio-01">
+                        <img class="img" id="img1" alt="Imagem de ativismo" src="assets/images/img1.png">
+                        <div>
+                            <h2> Fique por dentro do que acontece </h2>
+                            <p class="beneficio-paragrafo">Acompanhamos a Camâra dos Vereadores diariamente e te contamos tudo que acontece das tomadas de decisão</p> 
+                        </div>
+                     </div>
+                     <div class="beneficio" id="beneficio02">
+                        <img class="img" id="img2" alt="Imagem de ativismo" src="assets/images/img2.png">
+                        <div>
+                            <h2> Seja ativista da causa cidadã </h2>
+                            <p class="beneficio-paragrafo">Se cansou de só assistir as notícias e não contribuir com a política, aqui é o espaço para se envolver de forma apartidaria com os rumos da cidade</p> 
+                        </div>
+                     </div>
+                     <div class="beneficio" id="beneficio03">
+                        <img class="img" id="img3" alt="Imagem de ativismo" src="assets/images/img3.png">
+                        <div>
+                            <h2> Conheça melhor a realidade de Campinas </h2>
+                            <p class="beneficio-paragrafo">Nossa intenção é apoiar as diferentes necessidades da cidade, isso significa articular com pessoas do Cambuí ao Satélite Iris, e todos tem coisas a ensinar sobre ativismo e cidania</p> 
+                        </div>
+                     </div>
+                </div>
+        </section>
+
+        <section class="doacao">  
+            <div class="card-doacao">
+                <div id="texto-doacao">
+                    <h1>Você tem o sonho para Campinas, nós temos o caminho</h1>
+                    <p>Entre para comunidade de investidores de impacto positivo & ativismo na cidade e nos ajude a construir a Campinas que sonhamos e merecemos: diversa, inclusiva e gostosa de se viver.</p>
+                    <button id="botao-doar-cta"> DOE AGORA </button>
+                </div>
+                <div class="img-doacao">
+                    <img src="assets/images/coletivo.jpg" alt="Foto de um grupo animado" style="width: 600px; height: 500px; object-fit: cover; border-radius: 3px">
+                </div>
+            </div>
+        </section>
+
+        <section class="social">  
+            <div>
+                <h1> O que dizem sobre nós </h1>
+            </div>    
+            <div class="carrossel-item item01" id="item01">
+                <div class="carrossel-seta-voltar">
+                    <a href="#item02"> <h1> < </h1> </a>
+                </div>
+                <div class="img-container">
+                    <img src="assets/images/carrossel01.png" alt="Foto de um doador">
+                </div>
+                <div class="carrossel-texto">
+                    <p>Eu sou muito grata pelo trabalho da Minha Campinas, pois mesmo não morando mais por lá, consigo continuar acompanhando o que acontece na política da cidade graças à curadoria e conteúdo disponibilizado gratuitamente nas redes sociais sobre a cidade.</p>                
+                    <h5>Beatriz Massaioli, doadora há 4 anos</h5>
+                </div>
+                <div class="carrossel-seta-ir">
+                    <a href="#item02"> <h1> > </h1> </a>
+                </div>
+            </div>
+            <div class="carrossel-item item02" id="item02">
+                <div class="carrossel-seta-voltar">
+                    <a href="#item01"> <h1> < </h1> </a>
+                </div>
+                <div class="img-container">
+                    <img src="assets/images/carrossel02.jpg" alt="Foto de um doador">
+                </div>
+                <div class="carrossel-texto">
+                    <p> Lorem ipsum ahnrna, e and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in.</p>                
+                    <h5>Adriano Bastista, doadora há 2 anos</h5>
+                </div>
+                <div class="carrossel-seta-ir">
+                    <a href="#item01"> <h1> > </h1> </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-container">  
+            <div id="form-content">
+                <div class="form-titulo">
+                    <h1>Assine nosso boletim</h1>
+                </div>
+                <form id="form">
+                    <input type="text" placeholder="nome" id="nome">
+                    <input type="text" placeholder="email" id="email">
+                    <input type="submit" value="Inscrever">
+                </form>
+            </div>
+        </section>
+    
+        <footer>
+            <p> Footer </p>
+        </footer>
+    </body>
+    <script src="js/script.js"></script>   
+</html>
+
