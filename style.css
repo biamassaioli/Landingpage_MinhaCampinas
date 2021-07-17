@@ -74,7 +74,7 @@ section{
     width: 100%;
     display: flex;
     justify-content: center;
-}
+ }
 
 .home{
     display: flex;
@@ -255,7 +255,7 @@ section{
 }
 
 .carrossel-item{
-    display: none;
+/*     display: none; */
     align-content: center;
     width: 600px;
     height: 250px;
@@ -343,8 +343,54 @@ section{
     width: 100%;
 }
 
+.form-card{
+    height: 60px;
+    width: 400px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.form-card .campo-email{
+    height: 100%;
+    width: 100%;
+    background: green;
+}
+
+.form-card .campo-email input{
+    height: 100%;
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    padding: 0 130px 0 15px;
+    font-size: 20px;
+    outline: none;
+}
+
 .form-container{
     background-color: #D90066;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-card .campo-email .botao02{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    height: 40px;
+    width: 100px;
+    color: #fff;
+    background: #408C8C;
+    border-radius: 3px;
+    line-height: 40px;
+    cursor: pointer;
+
 }
 
 .form-titulo h1{
@@ -354,4 +400,58 @@ section{
     font-weight: 900;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+footer{
+    background-color: #747171;
+    padding-right: 180px;
+    padding-left: 180px;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container-top{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    color: #fff;
+}
+
+.footer-container-top h1{
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.footer-container-top p{
+    font-size: 15px;
+}
+
+.endereco{
+    text-align: center;
+    padding: 20px;
+}
+
+.contatos{
+    text-align: center;
+    padding: 20px;
+}
+
+.contatos img{
+    
+}
+
+.footer-container-bottom p{
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+    font-size: 10px;
+    font-style: italic;
+}
+
+hr{
+    border: 1px solid #fff;
 }

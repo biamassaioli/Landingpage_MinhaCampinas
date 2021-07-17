@@ -20,17 +20,18 @@
                 <li class="item-navegacao"><a href="#oferta">SOBRE</a></li>
                 <li class="item-navegacao"><a href="#doacao">COMO PARTICIPAR</a></li>
                 <li class="item-navegacao"><a href="#social">O QUE DIZEM</a></li>
+                <li class="item-navegacao"><a href="#footer">CONTATO</a></li>                
             </ul>
             <div>
-                <img class="logo" src="assets/images/LogoMCPS.png">
+                <a href="#home"><img class="logo" src="assets/images/LogoMCPS.png"></a>
             </div>
-                <button id="botao-doar" onclick="/">FAÇA PARTE</button>
+                <a href="#doacao"><button id="botao-doar">FAÇA PARTE</button></a>
         </nav>    
         
-        <section class="home">
+        <section class="home" id="home">
             <div class="video-container">
                 <video autoplay muted loop id="video">
-                    <source src="assets/images/equipe.mp4" type="video/mp4">
+                    <source src="assets/images/acaolambe.mp4" type="video/mp4">
                 </video>
     
                 <div class="headline">
@@ -40,7 +41,7 @@
             </div>
         </section>
 
-        <section class="oferta">  
+        <section class="oferta" id="oferta">  
                 <div class="oferta-titulo">
                     <h1> Campinas do jeitinho que você merece</h1>
                     <span id="oferta-titulo-span"> Há 7 anos reunindo campineiros e campineiras que querem participar ativamente das decisões da cidade</span>
@@ -70,7 +71,7 @@
                 </div>
         </section>
 
-        <section class="doacao">  
+        <section class="doacao" id="doacao">  
             <div class="card-doacao">
                 <div id="texto-doacao">
                     <h1>Você tem o sonho para Campinas, nós temos o caminho</h1>
@@ -83,13 +84,13 @@
             </div>
         </section>
 
-        <section class="social">  
+        <section class="social" id="social">  
             <div>
                 <h1> O que dizem sobre nós </h1>
             </div>    
             <div class="carrossel-item item01" id="item01">
                 <div class="carrossel-seta-voltar">
-                    <a href="#item02"> <h1> < </h1> </a>
+                   <!--  <a href="#item02"> --> <h1> < </h1> </a>
                 </div>
                 <div class="img-container">
                     <img src="assets/images/carrossel01.png" alt="Foto de um doador">
@@ -99,10 +100,10 @@
                     <h5>Beatriz Massaioli, doadora há 4 anos</h5>
                 </div>
                 <div class="carrossel-seta-ir">
-                    <a href="#item02"> <h1> > </h1> </a>
+                   <!--  <a href="#item02"> --> <h1> > </h1> </a>
                 </div>
             </div>
-            <div class="carrossel-item item02" id="item02">
+<!--             <div class="carrossel-item item02" id="item02">
                 <div class="carrossel-seta-voltar">
                     <a href="#item01"> <h1> < </h1> </a>
                 </div>
@@ -111,29 +112,46 @@
                 </div>
                 <div class="carrossel-texto">
                     <p> Lorem ipsum ahnrna, e and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in.</p>                
-                    <h5>Adriano Bastista, doadora há 2 anos</h5>
+                    <h5>Adriano Bastista, doador há 2 anos</h5>
                 </div>
                 <div class="carrossel-seta-ir">
                     <a href="#item01"> <h1> > </h1> </a>
                 </div>
-            </div>
+            </div> -->
         </section>
 
-        <section class="form-container">  
-            <div id="form-content">
-                <div class="form-titulo">
-                    <h1>Assine nosso boletim</h1>
+        <section class="form-container" id="form-container"> 
+
+            <div class="form-titulo">
+                <h1> Assine nossa newsletter: </h1>
+            </div>
+            
+            <div class="form-card">
+                <div class="campo-email">
+                    <input type="text" placeholder="Endereço de email">
+                    <label class="botao02">Inscrever</label>
                 </div>
-                <form id="form">
-                    <input type="text" placeholder="nome" id="nome">
-                    <input type="text" placeholder="email" id="email">
-                    <input type="submit" value="Inscrever">
-                </form>
             </div>
         </section>
     
-        <footer>
-            <p> Footer </p>
+        <footer id="footer">
+            <div class="footer-container">
+                <div class="footer-container-top">
+                    <div class="endereco">
+                        <h1> Onde nos encontrar </h1>
+                        <p>contato@minhacampinas.org.br <br>(19) 99622-9310 <br>Rua Luzitana, 1779 - Centro  - Campinas/SP - CEP: 13015-122 </p>
+                    </div>
+                    <div class="contatos">
+                        <h1> Como acompanhar </h1>
+                        <img src="assets/images/ig.png" alt="Logo Instagram">
+                        <img src="assets/images/tt.png" alt="Logo Twitter">
+                        <img src="assets/images/fb.png" alt="Logo Facebook">
+                    </div>
+                </div>
+                 <div class="footer-container-bottom">
+                    <p> © 2021 ‐ Minha Campinas<br> Feito com ❤️ por Beatriz Massaioli </p>
+                </div>
+            </div>    
         </footer>
     </body>
     <script src="js/script.js"></script>   
